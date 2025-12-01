@@ -1,8 +1,18 @@
 apiVersion: v1 
-kind: config-map
+kind: ConfigMap
 metadata: 
   name: pod-config
 data: 
   course: "Devops With Aws"
   duration: "120 hrs" 
   student: "amara"
+
+
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: pod-config
+# data:
+#   course: "DevSecOps with AWS"
+#   duration: "120hrs"
+#   trainer: "sivakumar"
