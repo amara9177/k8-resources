@@ -14,6 +14,6 @@ spec:
        # provide equal or more than requests
       # hard limit
       limits: #we can give limits enough
-        memory: "100Mi"
+        memory: "100Mi" #memory is nothing but RAM
         cpu: "120m"
 
