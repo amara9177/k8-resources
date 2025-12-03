@@ -1,16 +1,14 @@
 apiVersion: v1
-kind: Service
+kind: Pod
 metadata:
-  name: nginx-lb
-spec:
-  type: LoadBalancer
-  selector:
+  name: service-lb-demo
+  # These labels are used to register this pod with service
+  labels:
     project: roboshop
     component: frontend
     environment: dev
     purpose: load-balancer
-  ports:
-    - protocol: TCP
-      port: 80 # service port
-      targetPort: 80 # container port
-      nodePort: 30007 
+spec:
+  containers:
+  - name: nginx
+    image: nginx
